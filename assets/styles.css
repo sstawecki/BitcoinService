@@ -1,0 +1,23 @@
+.bc_col {
+    width: 300px;
+    float: left;
+    min-width: 300px;
+    background: #f1f1f1;
+    border: solid #999 1px;
+    margin: 5px;
+    padding: 10px;
+}
+
+.bc_col_inner {
+    float: left;
+    margin-right: 40px;
+}
+
+.bc_col_inner:last-child {
+    float: right;
+    margin-right: 0;
+}
+
+#service {
+    margin-top: 5px;
+}

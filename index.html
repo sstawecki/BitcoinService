@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>Bitcoin Service</title>
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap-responsive.min.css">
+    <link rel="stylesheet" href="assets/styles.css">
+</head>
+<body>
+<div class="container">
+    <h1>Bitcoin rates</h1>
+    <div>
+        <div class="bc_col">
+            <div class="bc_col_inner">
+                <label for="bc_price_bid">BID</label>
+                <span>USD</span> <span id="bc_price_bid">0</span>
+            </div>
+
+            <div class="bc_col_inner">
+                <label for="bc_price_ask">ASK</label>
+                <span>USD</span> <span id="bc_price_ask">0</span>
+            </div>
+        </div>
+
+        <div class="bc_col">
+            <div class="bc_col_inner">
+                <label for="bc_average_bid">Average BID</label>
+                <span>USD</span> <span id="bc_average_bid">0</span>
+            </div>
+            <div class="bc_col_inner">
+                <label for="bc_average_ask">Average ASK</label>
+                <span>USD</span> <span id="bc_average_ask">0</span>
+            </div>
+        </div>
+
+        <input class="btn" type="button" id="service" value="Start service"/>
+    </div>
+    <div style="clear:both;" id="history"><h2>History</h2></div>
+</div>
+
+<script type="text/javascript" src="lib/jquery-1.10.2.min.js"></script>
+<script type="text/javascript" src="lib/rx.all.js"></script>
+<script type="text/javascript" src="BitcoinService.js"></script>
+<script type="text/javascript" src="index.js"></script>
+
+</body>
+</html>
